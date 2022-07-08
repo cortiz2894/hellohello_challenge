@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Container from '@mui/material/Container';
+import { Stepper } from './components/Stepper/Stepper';
+import { ItemCard } from './components/Card/ItemCard';
+// Styles
+import './App.scss';
 
-function App() {
+function App(): JSX.Element {
+  const containerStyles = {
+    maxWidth: 860,
+    display: 'flex',
+    padding: '100px 0px',
+    alignItems: 'flex-start',
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container
+      maxWidth={false}
+      sx={containerStyles}
+      disableGutters
+    >
+      <Stepper />
+      <ItemCard />
+    </Container>
   );
 }
 

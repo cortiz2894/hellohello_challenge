@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --color-background: #F9FAFB;
+  --color-black: #252220;
+  --color-grey: #5D5750;
+  --color-soft-gray: #89837F;
+  --color-orange: #EC7000;
+  --color-blue: #106EB0;
+
+  --card-shadow: 0px 8px 16px rgb(86 80 76 / 4%);
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background) ;
+
+  .btn-custom {
+    text-transform: lowercase;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 15px 50px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &.primary {
+      background-color: var(--color-orange);
+      color: white;
+      border: none;
+      
+      &:hover {
+        transform: scale(1.06);
+      }
+  
+      &:disabled {
+        background: #d3d3d3;
+  
+        &:hover {
+          transform: scale(1);
+        }    
+      }
+    }
+
+    &.secondary {
+      background-color: white;
+      color: var(--color-blue);
+      border: 1px solid var(--color-blue);
+      width: 100%;
+      
+      &:hover {
+        background-color: var(--color-blue);
+        color: white;
+      }
+    }
+  }
+
+  .custom-input {
+    width: 100%;
+
+    label {
+      top: -15px;
+      left: -15px;
+      font-weight: 600;
+    }
+
+    legend {
+      display: none;
+    }
+
+    fieldset {
+      margin-top: 5px;
+    }
+    
+    input {
+      background: white;
+      padding: 13px 15px;
+    }
+
+    & > p {
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+  }
+}
