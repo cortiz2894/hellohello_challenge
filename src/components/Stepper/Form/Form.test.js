@@ -51,7 +51,7 @@ describe('<Form/>', () => {
     expect(loadingEl).toHaveStyle('width: 20px; height: 20px; color: white; margin-left: 10px;');
   });
 
-  test('render success', async () => {
+  test('send mail', async () => {
     const mockedAxios = sendMailMock;
     const data = { error: false, message: 'Éxito.' };
     fireEvent.change(inputEL, { target: { value: 'cortiz2894@gmail.com' } });
