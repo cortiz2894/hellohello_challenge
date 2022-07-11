@@ -18,6 +18,7 @@ function App(): JSX.Element {
       maxWidth={false}
       sx={containerStyles}
       disableGutters
+      className="general-container"
     >
       <Stepper />
       <ItemCard />

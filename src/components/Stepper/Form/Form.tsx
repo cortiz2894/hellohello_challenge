@@ -27,12 +27,18 @@ export function Form({ option, changeStep }:Props): JSX.Element {
     setEmail(e.target.value);
   };
 
+  const sendData = async ():Promise<void> => {
+    try {
+      await sendEmail(email, option);
+      setSuccessMessage(true);
+    } catch (err) {
+      setShowSnackbar(true);
+    }
+  };
+
   const handleSubmit = ():void => {
     setLoader(true);
-    sendEmail(email, option)
-      .then(() => setSuccessMessage(true))
-      .catch(() => setShowSnackbar(true))
-      .finally(() => setLoader(false));
+    sendData();
   };
 
   return (

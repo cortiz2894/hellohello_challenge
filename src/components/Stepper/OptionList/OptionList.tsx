@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Skeleton from '@mui/material/Skeleton';
 import { Button } from '../../Common/Button';
+// Services
 import { getOptions } from '../../../services/OptionList.service';
+// Interfaces
 import { Option, Indicator } from '../../models';
 
 interface Props {
@@ -11,17 +13,13 @@ export function OptionList({ changeStep }: Props):JSX.Element {
   const [options, setOptions] = useState<Option[]>([]);
   const [selectedOption, setSelectedOption] = useState<string>('');
 
-  const getData = async ():Promise<Option[]> => {
+  const getData = async ():Promise<void> => {
     const response = await getOptions();
-    return response.data;
+    setTimeout(() => { setOptions(response.data); }, 1200);
   };
 
   useEffect(() => {
-    getData()
-      .then((res) => {
-        // setTimeout added to show Skeleton effect
-        setTimeout(() => { setOptions(res); }, 1200);
-      });
+    getData();
   }, []);
 
   const selectOption = (value:string):void => {

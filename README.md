@@ -1,14 +1,31 @@
-# hellohello
+# hellohello Frontend Challenge
 
-## Instalación
+## About The App
+Frontend challenge 
 
- - Clonar el [repositorio](https://github.com/cortiz2894/hellohello_challenge).
- - Instalar las dependencias mediante el comando `npm install`.
+## Screenshots
 
-## Scripts
+`![Writing](https://unsplash.com/photos/VBPzRgd7gfc)`
 
-- Levantar el proyecto localmente -> `npm start`.
-- Correr los test -> `npm run test -- --coverage`.
-- Linter -> `eslint src/*`.
+Picture by [Kelly Sikkema](https://unsplash.com/@kellysikkema)
 
+## Technologies & Libraries
+- [`ReactJS`](https://es.reactjs.org/)
+- [`Typescript`](https://www.typescriptlang.org/)
+- [`Eslint`](https://eslint.org/)
+- [`react testing library`](https://testing-library.com/docs/react-testing-library/intro/)
+- [`Jest`](https://jestjs.io/)
+- [`Material UI`](https://mui.com/)
+- [react form validator core](https://www.npmjs.com/package/react-form-validator-core)
 
+## Setup
+- download or clone the repository
+- Install dependencies using `npm install`
+- For start the app run `npm start`
+- Run `npm test -- --coverage` to see the test coverage of `npm test`.
+
+## Author
+
+`Christian Daniel Ortiz Ororbia`
+
+- [Linkedin](https://www.linkedin.com/in/christian-daniel-ortiz-ororbia-95b14210b/)

@@ -1,0 +1,27 @@
+@media(max-width: 960px) {
+    #root {
+        .general-container {
+            display: block;
+            padding-left: 25px;
+            padding-right: 25px;
+
+            .stepper-container {
+                width: 100%;
+                float: left;
+                
+                .content-step {
+                    .btn-custom.primary {
+                        width: 100%;
+                    }
+                }
+            }
+            
+            .card-with-image {
+                float: left;
+                width: 100%;
+                margin-top: 25px;
+            }
+                        
+        }
+    }
+}
