@@ -3,12 +3,6 @@
 ## About The App
 Frontend challenge 
 
-## Screenshots
-
-`![Writing](https://unsplash.com/photos/VBPzRgd7gfc)`
-
-Picture by [Kelly Sikkema](https://unsplash.com/@kellysikkema)
-
 ## Technologies & Libraries
 - [`ReactJS`](https://es.reactjs.org/)
 - [`Typescript`](https://www.typescriptlang.org/)
